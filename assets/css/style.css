@@ -28,6 +28,7 @@ html {
     position: fixed;
     top: 0%;
     background-color: #0A192F;
+    z-index: 2;
 
 }
 
@@ -83,7 +84,7 @@ html {
 .content1 {
     display: flex;
     width: 100%;
-    height: 100vh;
+    padding: 130px 0px;
 
 }
 
@@ -120,32 +121,78 @@ html {
 }
 
 .content2-parent {
-    height: 100vh;
     display: flex;
-    align-items: flex-end;
-
+    padding-top: 95px;
 }
 
 .content2 {
-    height: 90vh;
     display: grid;
-    grid-template-columns: 15% 85%;
-    align-items: center;
+    grid-template-columns: 1fr 5fr;
+    row-gap: 60px;
 }
 
 .icons {
     height: 60px;
     width: 60px;
+
 }
 
 .content2 p {
     color: #CCD6F6;
-    padding-right: 20px;
-
 }
 
 .content2 div {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
+
+.content3{
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    row-gap: 80px;
+    padding-top: 95px;
+
+}
+
+.content3 div{
+    border: 4px dashed #54D5BB;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 350px;   
+    height: 500px;
+
+}
+.content3 div img{
+    height: 300px;
+    width: 300px;
+}
+.content3 div p{
+    padding: 0px 20px;
+    color: #6E7995;
+}
+.content3 div h2{
+    color: #CCD6F6;
+}
+.content3 div:hover{
+    transform: scale(1.03);
+}
+
+
+::-webkit-scrollbar {
+    width: 5px;
+  
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #54D5BB; 
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hwb(168 33% 30%); 
+  }
