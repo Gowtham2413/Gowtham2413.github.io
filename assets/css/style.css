@@ -11,7 +11,7 @@ body {
 @media screen and (max-width:800px) {
     body{
         font-size: small;
-        margin-top: 150px;
+        /* margin-top: 150px; */
     }
     .navbar {
         flex-direction: column;
@@ -24,7 +24,9 @@ body {
     .resume{
         margin-bottom: 15px;
     }
-    
+    #home-content{
+        min-height: 130px;
+    }
     .content1{
         flex-direction: column-reverse;
         justify-content: flex-start;
