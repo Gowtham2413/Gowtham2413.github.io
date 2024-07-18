@@ -8,9 +8,10 @@ body {
     font-style: normal;
 }
 
-@media screen and (max-width:740px) {
-    .body{
+@media screen and (max-width:800px) {
+    body{
         font-size: small;
+        margin-top: 150px;
     }
     .navbar {
         flex-direction: column;
@@ -23,6 +24,21 @@ body {
     .resume{
         margin-bottom: 15px;
     }
+    
+    .content1{
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+    }
+    #content1-sub1{
+        font-size: small;
+        padding-left: 0%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        /* align-items: center; */
+        /* justify-content: center; */
+        padding:0px 20px ;
+    }
 }
 
 .navbar {
@@ -30,7 +46,12 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: #0A192F;
+    z-index: 2;
     /* flex-wrap: wrap; */
+    position: fixed;
+    width: 100%;
+    top: 0%;
 }
 
 .nav-items {
@@ -49,11 +70,12 @@ body {
     /* border: 1px solid white; */
     padding:10px 20px;
     text-decoration: none;
+    border-radius: 5%;
     color: #CCD6F6;
 }
 .resume{
     border: 2px solid #54D5BB;
-    border-radius: 8%;
+    border-radius: 5%;
     padding:10px 20px;
     text-decoration: none;
     color: #54D5BB;
@@ -65,4 +87,47 @@ body {
 .resume:hover{
     background-color: #54D5BB;
     color: #0A192F;
+}
+
+
+.content1{
+    /* border: 1px solid red; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+}
+
+
+.content1-sub1 {
+    /* border: 1px solid white; */
+    font-size: x-large;
+    flex-basis: 57%;
+    padding-left: 100px;
+ 
+}
+
+.content1-sub1 h1 {
+    color: #CCD6F6;
+}
+
+.content1-sub1 h4 {
+    color: #54D5BB;
+}
+
+.content1-sub1 p {
+    color: #6E7995;
+    font-weight: lighter;
+    font-size: large;
+}
+
+.content1-sub2 {
+    /* border: 1px solid white; */
+    display: flex;
+    /* flex-basis: 39%; */
+}
+.content1-sub2 img{
+    width: 100%;
+    height: auto;
 }
