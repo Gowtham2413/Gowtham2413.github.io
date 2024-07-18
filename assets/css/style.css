@@ -18,6 +18,7 @@ body {
     .nav-items{
         min-width: 100%;
         margin-bottom: 20px;
+        flex-wrap: wrap;
     }
     .resume{
         margin-bottom: 15px;
