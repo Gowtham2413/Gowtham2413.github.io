@@ -24,18 +24,16 @@ html{
     .navbar {
         flex-direction: column;
     }
-    .nav-items{
-        min-width: 100%;
-        margin-bottom: 20px;
-        flex-wrap: wrap;
+    .nav-items a{
+        display: none;
     }
     .resume{
-        margin-bottom: 15px;
+        display: none;
     }
     .content1{
         flex-direction: column-reverse;
         justify-content: flex-start;
-        padding-top: 35%;
+        /* padding-top: 35%; */
     }
     #content1-sub1{
         font-size: small;
@@ -48,9 +46,8 @@ html{
         padding:0px 20px ;
     }
 
-
     #skills-content{
-    padding-top: 50%;
+    padding-top: 10%;
     font-size: x-small;
     gap: 1rem;
     }
